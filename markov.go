@@ -18,7 +18,7 @@ func (chain *Chain) AddLine(line string) error {
 	var links []storage.Link
 	words := strings.Fields(line)
 
-	for i := 0; i <= len(words)-3; i++ {
+	for i := 0; i <= len(words)-(chain.PrefixLen + 1); i++ {
 		prefix := strings.Join(words[i:i+chain.PrefixLen], " ")
 		suffix := words[i+chain.PrefixLen]
 
