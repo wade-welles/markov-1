@@ -1,7 +1,7 @@
 package markov
 
 import (
-	"github.com/ceruleis/markov/storage"
+	"github.com/elliotspeck/markov/storage"
 	"strings"
 	"testing"
 )
